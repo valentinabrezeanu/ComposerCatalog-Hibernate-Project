@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="pojo.Composers" table="Composers" catalog="muzica"
+		optimistic-lock="version">
+		<id name="idcomposer" type="java.lang.Integer">
+			<column name="idcomposer" />
+			<generator class="identity" />
+		</id>
+		<property name="Last_name" type="string">
+			<column name="Last_name" length="45" />
+		</property>
+		<property name="First_name" type="string">
+			<column name="First_name" length="45" />
+		</property>
+		<property name="Age" type="int">
+			<column name="Age" />
+		</property>
+		<property name="Nr_works" type="int">
+			<column name="Nr_works" />
+		</property>
+		<set name="Coll" table="Collaborations" inverse="true" lazy="true"
+			fetch="select">
+			<key>
+				<column name="idcomposer" />
+			</key>
+			<one-to-many class="pojo.Collaborations" />
+		</set>
+	</class>
+</hibernate-mapping> 
