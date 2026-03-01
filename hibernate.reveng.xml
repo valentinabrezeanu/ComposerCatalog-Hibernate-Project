@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-reverse-engineering> 
+<schema-selection match-catalog="muzica"/> 
+<table-filter match-name="Compositions"/> 
+<table-filter match-name="Composers"/> 
+<table-filter match-name="Collaborations"/> 
+</hibernate-reverse-engineering>
