@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h2>Musical Legacy</h2>
+	
+	<div class="quote-container">
+	    <p class="quote">"Music is a higher revelation than all wisdom and philosophy."</p>
+	    <p class="quote" style="text-align: left; padding-left: 600px;">— Ludwig van Beethoven</p>
+	 </div>
+	 
+	 <div class="form-container">
+        <div class="button-group">
+        	<p class="title">Explore the Music Database:</p>
+        	<form action="CompositionsController" method="POST" style="display:inline;">
+	            <input type="submit" name="afiseazaCompositions" value="COMPOSITIONS" class="btn" style="font-size: 16px;">
+	        </form>
+	        <form action="ComposersController" method="POST" style="display:inline;">
+	            <input type="submit" name="afiseazaComposers" value="COMPOSERS" class="btn" style="font-size: 16px;">
+	        </form>
+	        <form action="CollaborationsController" method="POST" style="display:inline;">
+	            <input type="submit" name="afiseazaCollaborations" value="COLLABORATIONS" class="btn" style="font-size: 16px;">
+	        </form>
+	      </div>
+    </div>
+</body>
+</html>
